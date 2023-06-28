@@ -130,7 +130,7 @@ const Questions = () => {
             }
 
             { exotic !== "" ? 
-                <Link to="/results">
+                <Link to="/results" className="fixer">
                     <button className="golden-button theAnimation" id="submission" onClick={getCats}>Submit</button>
                 </Link>
                 
