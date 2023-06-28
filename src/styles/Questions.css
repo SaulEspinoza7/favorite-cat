@@ -1,0 +1,117 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.number-circle {
+    background-color: rgb(218, 64, 64);
+    color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+}
+
+.number-question {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.question {
+    margin-left: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pic-text {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans';
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.double-button {
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.triple-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+button {
+    user-select: none;
+    width: 180px;
+    background-color: rgb(218, 64, 64);
+    padding: 20px;
+    border-style: none;
+    border-radius: 5%;
+    font-family: 'Lucida Sans';
+    font-size: medium;
+    font-weight: bold;
+    transition:all 0.25s;
+    text-align: center;
+    color: black;
+    text-decoration-line: none;
+}
+
+.fixer {
+    background-color: white;
+    border-style: none;
+}
+
+.fixer:hover {
+    border-style: none;
+    background-color: white;
+}
+
+button:hover {
+    color:white;
+    background-color: rgb(168, 33, 33);
+}
+
+.golden-button {
+    width: 180px;
+    background-color: rgb(235, 195, 127);
+    padding: 1%;
+    border-style: none;
+    border-radius: 5%;
+    font-family: 'Lucida Sans';
+    font-size: medium;
+    font-weight: bold;
+    transition:all 0.25s;
+    text-align: center;
+    color: black;
+    text-decoration-line: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.golden-button:hover {
+    color:white;
+    background-color: rgb(175, 121, 28);
+}
+
+.spacer {
+    padding-top: 4%;
+}
+
+.theAnimation {
+    animation: fade 1s;
+}

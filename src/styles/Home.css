@@ -1,0 +1,49 @@
+.home {
+    background-image: url("../images/catBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.home-elements {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans';
+}
+
+.home-elements img {
+    border-radius: 5%;
+    margin-top: 8%;
+    border-color: rgb(218, 64, 64);
+    border-style: solid;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+a {
+    width: 180px;
+    background-color: rgb(235, 195, 127);
+    padding: 1%;
+    border-style: none;
+    border-radius: 5%;
+    font-family: 'Lucida Sans';
+    font-size: medium;
+    font-weight: bold;
+    transition:all 0.25s;
+    text-align: center;
+    color: black;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color:white;
+    background-color: rgb(175, 121, 28);
+}

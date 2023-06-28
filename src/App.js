@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import NavBar from "./NavBar.js"
+import Home from "./Home.js"
+import Results from "./Results.js"
+import Questions from "./Questions.js"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import ResultContext from "./context/result-context";
 
 function App() {
+  const [catList, setCatList] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+    <NavBar />
+    
+      
+    <ResultContext.Provider value = {{catList, setCatList}}>
+        <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/questions" element={<Questions/>}></Route>
+        <Route path="/results" element={<Results/>}></Route>
+        </Routes>
+    </ResultContext.Provider>
+    
+    </React.Fragment>
   );
 }
 
