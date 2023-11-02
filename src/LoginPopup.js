@@ -16,7 +16,7 @@ const LoginPopup = (props) => {
     const getAllCats = () => {
         console.log("Getting all cats as ")
 
-        Axios.get('http://localhost:3001/all-cats' , {
+        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/all-cats' , {
 
         }).then((response) => {
             setCatList(response.data);
@@ -33,7 +33,7 @@ const LoginPopup = (props) => {
         console.log("Authenticating from frontend...");
         console.log(myuserAttempt);
 
-        Axios.get('http://localhost:3001/admin', {
+        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/admin', {
             params: {
                 myuserAttempt
             }

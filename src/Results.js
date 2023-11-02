@@ -13,7 +13,7 @@ const Results = () => {
             <div className="my-spacer"></div>
 
             <div className="cat-elements">
-                {catList.map(cat => <CatComponent key={cat.id} id={cat.id} name = {cat.catName} grooming = {cat.grooming} exoticness = {cat.exoticness} description = {cat.description} change = {true}></CatComponent>)}
+                {catList.map(cat => <CatComponent key={cat.id} id={cat.id} name = {cat.catName} grooming = {cat.grooming} exoticness = {cat.exoticness} description = {cat.description} change = {false}></CatComponent>)}
             </div>
         </React.Fragment>
     );
