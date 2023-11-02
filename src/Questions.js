@@ -30,7 +30,7 @@ const Questions = () => {
             myexotic
           }
         }).then((response) => {
-            console.log(response);
+            console.log(response.data[0]);
             setCatList(response.data[0]);
             console.log("Que tal");
           }).catch((error) => {
