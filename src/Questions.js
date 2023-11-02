@@ -31,7 +31,7 @@ const Questions = () => {
           }
         }).then((response) => {
             console.log(response);
-            setCatList(response.data);
+            setCatList(response.data[0]);
             console.log("Que tal");
           }).catch((error) => {
             console.log(error);
