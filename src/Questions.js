@@ -23,7 +23,7 @@ const Questions = () => {
         
         console.log("Hola");
 
-        Axios.get('http://localhost:3001/cats', {
+        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/cats', {
           params: {
             mygrooming,
             myactivity,
