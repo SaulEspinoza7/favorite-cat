@@ -23,19 +23,17 @@ const Questions = () => {
         
         console.log("Hola");
 
-        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/function-1/cats', {
+        Axios.get('http://localhost:3001/cats', {
           params: {
             mygrooming,
             myactivity,
             myexotic
           }
-        })
-          .then((response) => {
+        }).then((response) => {
             console.log(response);
-            setCatList(response.data[0]);
+            setCatList(response.data);
             console.log("Que tal");
-          })
-          .catch((error) => {
+          }).catch((error) => {
             console.log(error);
           });
       };

@@ -4,7 +4,7 @@ p, h2 {
 }
 
 .cat-box{
-    width: 275px;
+    width: 290px;
     margin: 0% 2%;
     border-style: solid;
     border-color: rgb(235, 195, 127);
@@ -30,6 +30,17 @@ p, h2 {
     font-size: 19px;
 }
 
+.text-lines form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-lines button {
+    padding: 6px;
+    width: 70px;
+}
+
 .text-presenter {
     font-weight: bold;
 }
@@ -37,4 +48,8 @@ p, h2 {
 .desc-fixer {
     padding-bottom: 0%;
     margin-bottom: 0%;
+}
+
+.cat-text-margin {
+    margin: 0 8px;
 }

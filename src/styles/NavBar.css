@@ -14,3 +14,23 @@ body{
     align-self: center;
     font-family: 'Lobster', cursive;
 }
+
+.modified-link {
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: none;
+}
+
+.modified-link:hover {
+    background-color: transparent;
+}
+
+.admin-button {
+    background-color: rgba(218,215,208,255);
+    color: rgb(218, 64, 64);
+    margin-top: 10px;
+    position: absolute;
+    left: 2%;
+}

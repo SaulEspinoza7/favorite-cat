@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/CatComponent.css";
+import Axios from "axios";
 
 const CatComponent = (props) => {
+    const [editing, setEditing] = useState(false);
+    const [textInput, setTextInput] = useState("");
+
+    const updateCat = (event) => {
+        event.preventDefault();
+
+        const myInput = textInput;
+    
+        Axios.put('http://localhost:3001/update/' + props.id, {
+            myInput
+        }).then((response) => {
+            console.log("Success on updating")
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+
     return (
         <div className="cat-box">
-            <img src={require("./images/" + props.id + ".jpg")} width="275px"></img>
+            <img src={require("./images/" + props.id + ".jpg")} width="290px"></img>
+            
+            <div className="cat-text-margin">
             <h2>{props.name}</h2>
 
             <div className="text-lines">
@@ -20,7 +40,20 @@ const CatComponent = (props) => {
             </div>
 
             <div className="text-lines">
-                <p> <div className="text-presenter">Description:</div> {props.description}</p>
+                <div>
+                    <div className="text-presenter">Description: 
+                    {props.change ? <button onClick={() => setEditing(!editing)}>Edit</button> : <></>}
+                    </div> 
+                    
+                    {editing ? 
+                    <form>
+                        <textarea rows="14" cols="34" onChange={(e) => setTextInput(e.target.value)} defaultValue={props.description}></textarea>
+                        <input type="submit" onClick={updateCat}></input>
+                    </form> : 
+                    <div>{props.description}</div>}
+                </div>
+                
+            </div>
             </div>
         </div>
     );

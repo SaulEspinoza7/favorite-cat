@@ -1,0 +1,60 @@
+@keyframes theFade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.login-popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 15%;
+    animation: theFade 0.5s;
+}
+
+.square-popup {
+    width: 25%;
+    margin: auto;
+    background-color: white;
+    font-family: 'Lucida Sans';
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.square-popup h1 {
+    text-align: center;
+}
+
+.square-popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    margin-top: 1%;
+}
+
+form input {
+    margin-top: 5px;
+}
+
+.pop-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pop-cancel {
+    color: black;
+    background-color: rgba(218,215,208,255);
+}
+
+.pop-cancel:hover {
+    background-color: rgb(167, 167, 167);
+}
