@@ -115,3 +115,40 @@ button:hover {
 .theAnimation {
     animation: fade 1s;
 }
+
+@media (max-width: 500px) {
+    .number-circle {
+        width: 50px;
+        height: 30px;
+        font-size: 25px;
+    }
+
+    .pic-text img {
+        width: 300px;
+    }
+
+    .pic-text {
+        flex-direction: column;
+    }
+
+    .double-button {
+        width: 300px;
+        margin: auto;
+    }
+
+    .double-button button {
+        width: 120px;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    .triple-button {
+        margin: 0 20px;
+    }
+
+    .number-circle {
+        margin-top: 23px;
+    }
+}

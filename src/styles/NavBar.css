@@ -34,3 +34,10 @@ body{
     position: absolute;
     left: 2%;
 }
+
+@media (max-width: 500px) {
+    .admin-button {
+        width: 110px;
+        height: 70px;
+    }
+}
