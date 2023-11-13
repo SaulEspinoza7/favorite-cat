@@ -56,14 +56,14 @@ const LoginPopup = (props) => {
             <div className="square-popup">
                 <h1>Authenticate as Admin</h1>
 
-                <form>
+                <form onSubmit={authenticateAdmin}>
                     <label>Password</label>
                     <input type="password" onChange={writePassword}></input>
                     <div className="spacer"></div>
 
                     <div className="pop-buttons">
-                        <button onClick={() => props.changeFunction(false)} className="pop-cancel">Cancel</button>
-                        <button type="submit" onClick={authenticateAdmin}>Submit</button>
+                        <button onClick={() => props.changeFunction(false)} type="button" className="pop-cancel">Cancel</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>

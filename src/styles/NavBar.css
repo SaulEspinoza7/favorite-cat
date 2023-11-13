@@ -37,7 +37,15 @@ body{
 
 @media (max-width: 500px) {
     .admin-button {
-        width: 110px;
-        height: 70px;
+        width: 90px;
+        height: 65px;
+        font-size: 13px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-box h1 {
+        font-size: 29px;
     }
 }

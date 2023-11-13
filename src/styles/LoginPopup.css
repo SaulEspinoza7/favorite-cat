@@ -58,3 +58,9 @@ form input {
 .pop-cancel:hover {
     background-color: rgb(167, 167, 167);
 }
+
+@media (max-width: 500px) {
+    .square-popup {
+        width: 90%;
+    }
+}
