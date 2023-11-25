@@ -59,6 +59,12 @@ form input {
     background-color: rgb(167, 167, 167);
 }
 
+@media (max-width: 1200px) {
+    .square-popup {
+        width: 38%;
+    }
+}
+
 @media (max-width: 500px) {
     .square-popup {
         width: 90%;

@@ -52,6 +52,16 @@ a:hover {
     background-color: rgb(175, 121, 28);
 }
 
+@media (max-width: 1200px) {
+    .home-elements {
+        margin-left: 40px;
+    }
+
+    .home-elements img {
+        width: 480px;
+    }
+}
+
 @media (max-width: 500px) {
     .home-elements {
         display: flex;

@@ -11,7 +11,7 @@ const CatComponent = (props) => {
 
         const myInput = textInput;
     
-        Axios.put('http://localhost:3001/update/' + props.id, {
+        Axios.put('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/update/' + props.id, {
             myInput
         }).then((response) => {
             console.log("Success on updating")

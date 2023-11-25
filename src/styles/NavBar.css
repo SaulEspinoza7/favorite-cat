@@ -35,6 +35,13 @@ body{
     left: 2%;
 }
 
+@media (max-width: 1200px) {
+    .admin-button {
+        width: 140px;
+        font-size: 15px
+    }
+}
+
 @media (max-width: 500px) {
     .admin-button {
         width: 90px;

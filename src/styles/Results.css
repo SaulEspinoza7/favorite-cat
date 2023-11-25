@@ -13,12 +13,8 @@
 }
 
 .cat-elements {
+    margin-top: 2%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-}
-
-@media (max-width: 500px) {
-    .cat-elements {
-        flex-wrap: wrap;
-    }
 }
