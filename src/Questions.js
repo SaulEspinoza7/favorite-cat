@@ -23,7 +23,7 @@ const Questions = () => {
         
         console.log("Hola");
 
-        Axios.get('https://18851f617a03.ngrok.app/cats', {
+        Axios.get('https://193595b265fa.ngrok.app/cats', {
           params: {
             mygrooming,
             myactivity,

@@ -17,7 +17,7 @@ const LoginPopup = (props) => {
     const getAllCats = () => {
         console.log("Getting all cats as ")
 
-        Axios.get('https://18851f617a03.ngrok.app/all-cats' , {
+        Axios.get('https://193595b265fa.ngrok.app/all-cats' , {
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
             }),
@@ -36,7 +36,7 @@ const LoginPopup = (props) => {
         console.log("Authenticating from frontend...");
         console.log(myuserAttempt);
 
-        Axios.get('https://18851f617a03.ngrok.app/admin', {
+        Axios.get('https://193595b265fa.ngrok.app/admin', {
             params: {
                 myuserAttempt
             }, 

@@ -11,7 +11,7 @@ const CatComponent = (props) => {
 
         const myInput = textInput;
     
-        Axios.put('https://18851f617a03.ngrok.app/update/' + props.id, {
+        Axios.put('https://193595b265fa.ngrok.app/update/' + props.id, {
             myInput, 
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
