@@ -13,11 +13,14 @@ const LoginPopup = (props) => {
         changeAttempt(event.target.value);
     };
 
+    // useEffect can be used instead here
     const getAllCats = () => {
         console.log("Getting all cats as ")
 
-        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/all-cats' , {
-
+        Axios.get('https://18851f617a03.ngrok.app/all-cats' , {
+            headers: new Headers({
+                "ngrok-skip-browser-warning": "69420",
+            }),
         }).then((response) => {
             setCatList(response.data);
             console.log("Check")
@@ -33,10 +36,13 @@ const LoginPopup = (props) => {
         console.log("Authenticating from frontend...");
         console.log(myuserAttempt);
 
-        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/admin', {
+        Axios.get('https://18851f617a03.ngrok.app/admin', {
             params: {
                 myuserAttempt
-            }
+            }, 
+            headers: new Headers({
+                "ngrok-skip-browser-warning": "69420",
+            }),
         }).then((response) => {
             setLogged(response.data)
             console.log(response.data)

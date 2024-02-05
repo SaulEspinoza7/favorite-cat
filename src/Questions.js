@@ -23,12 +23,15 @@ const Questions = () => {
         
         console.log("Hola");
 
-        Axios.get('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/cats', {
+        Axios.get('https://18851f617a03.ngrok.app/cats', {
           params: {
             mygrooming,
             myactivity,
             myexotic
-          }
+          }, 
+          headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+        }),
         }).then((response) => {
             console.log(response.data);
             setCatList(response.data);

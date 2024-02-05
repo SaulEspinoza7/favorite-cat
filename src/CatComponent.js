@@ -11,8 +11,11 @@ const CatComponent = (props) => {
 
         const myInput = textInput;
     
-        Axios.put('https://us-central1-vernal-signal-391117.cloudfunctions.net/function-1/update/' + props.id, {
-            myInput
+        Axios.put('https://18851f617a03.ngrok.app/update/' + props.id, {
+            myInput, 
+            headers: new Headers({
+                "ngrok-skip-browser-warning": "69420",
+            }),
         }).then((response) => {
             console.log("Success on updating")
         }).catch((error) => {
