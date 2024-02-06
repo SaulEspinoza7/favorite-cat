@@ -14,7 +14,7 @@ const Questions = () => {
     const [grooming, setGrooming] = useState("");
     const [activity, setActivity] = useState("");
     const [exotic, setExotic] = useState("");
-    const {catList, setCatList} = useContext(ResultContext);
+    const {catList, setCatList, globalUrl} = useContext(ResultContext);
 
     const getCats = () => {
         const mygrooming = grooming;
@@ -23,7 +23,7 @@ const Questions = () => {
         
         console.log("Hola");
 
-        Axios.get('https://193595b265fa.ngrok.app/cats', {
+        Axios.get(globalUrl + 'cats', {
           params: {
             mygrooming,
             myactivity,

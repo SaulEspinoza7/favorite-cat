@@ -5,7 +5,7 @@ import Axios from "axios";
 import {useNavigate, userNavigate} from "react-router-dom";
 
 const LoginPopup = (props) => {
-    const {catList, setCatList, isLoggedIn, setLogged} = useContext(ResultContext);
+    const {catList, setCatList, isLoggedIn, setLogged, globalUrl} = useContext(ResultContext);
     const [userAttempt, changeAttempt] = useState("");
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const LoginPopup = (props) => {
     const getAllCats = () => {
         console.log("Getting all cats as ")
 
-        Axios.get('https://193595b265fa.ngrok.app/all-cats' , {
+        Axios.get(globalUrl + 'all-cats' , {
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
             }),
@@ -36,7 +36,7 @@ const LoginPopup = (props) => {
         console.log("Authenticating from frontend...");
         console.log(myuserAttempt);
 
-        Axios.get('https://193595b265fa.ngrok.app/admin', {
+        Axios.get(globalUrl + 'admin', {
             params: {
                 myuserAttempt
             }, 

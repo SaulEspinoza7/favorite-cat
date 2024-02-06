@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import ResultContext from "./context/result-context";
 import "./styles/CatComponent.css";
 import Axios from "axios";
 
 const CatComponent = (props) => {
     const [editing, setEditing] = useState(false);
     const [textInput, setTextInput] = useState("");
+    const {globalUrl} = useContext(ResultContext);
 
     const updateCat = (event) => {
         event.preventDefault();
 
         const myInput = textInput;
     
-        Axios.put('https://193595b265fa.ngrok.app/update/' + props.id, {
+        Axios.put(globalUrl + 'update/' + props.id, {
             myInput, 
             headers: new Headers({
                 "ngrok-skip-browser-warning": "69420",
