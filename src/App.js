@@ -11,7 +11,7 @@ import ResultContext from "./context/result-context";
 function App() {
   const [catList, setCatList] = useState([]);
   const [isLoggedIn, setLogged] = useState(false);
-  const [globalUrl, setGlobalUrl] = useState("https://33c102f84401.ngrok.app/")
+  const [globalUrl, setGlobalUrl] = useState("https://38e1703d22c6.ngrok.app/")
 
   return (
     <React.Fragment>
