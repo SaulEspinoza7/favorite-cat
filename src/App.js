@@ -4,9 +4,10 @@ import Home from "./Home.js"
 import Results from "./Results.js"
 import Questions from "./Questions.js"
 import Admin from "./Admin.js"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import ResultContext from "./context/result-context";
+
 
 function App() {
   const [catList, setCatList] = useState([]);
@@ -24,7 +25,7 @@ function App() {
           <Route path="/results" element={<Results/>}></Route>
           <Route path="/admin" element={<Admin/>}></Route>
         </Routes>
-    </ResultContext.Provider>
+      </ResultContext.Provider>
     
     </React.Fragment>
   );

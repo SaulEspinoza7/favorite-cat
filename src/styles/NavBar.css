@@ -8,11 +8,18 @@ body{
     background-color: rgb(218, 64, 64);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-box h1 {
     align-self: center;
     font-family: 'Lobster', cursive;
+    color: black;
+}
+
+.nav-box h1:hover {
+    transition: all 0.5s;
+    color: white;
 }
 
 .modified-link {
